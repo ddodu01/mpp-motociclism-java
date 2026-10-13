@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Conexiunea la SQLite -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:D:/Proiecte MPP/mpp-proiect-java-dodudaniel/motociclism.db</property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Dialectul pentru SQLite -->
+        <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+        <!-- Afiseaza SQL-ul generat la consola (cerinta 5 din laborator) -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Nu modifica schema bazei de date existente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Clasele mapate -->
+        <mapping class="ro.mpp2024.Cursa"/>
+        <mapping class="ro.mpp2024.Participant"/>
+    </session-factory>
+</hibernate-configuration>

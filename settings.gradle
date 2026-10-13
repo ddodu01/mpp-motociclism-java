@@ -1,0 +1,8 @@
+rootProject.name = 'mpp-proiect-java-dodudaniel'
+include 'model'
+include 'repository'
+include 'services'
+include 'ui'
+include 'networking'
+include 'server'
+include 'rest'

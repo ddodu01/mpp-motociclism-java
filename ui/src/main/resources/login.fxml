@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ro.mpp2024.LoginController">
+
+    <Label text="Motociclism Login" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <Label text="Username:"/>
+    <TextField fx:id="usernameField" promptText="Introduceți username"/>
+
+    <Label text="Parola:"/>
+    <PasswordField fx:id="passwordField" promptText="Introduceți parola"/>
+
+    <Button text="Login" onAction="#handleLogin" style="-fx-min-width: 100;"/>
+
+    <Label fx:id="errorLabel" style="-fx-text-fill: red;"/>
+
+</VBox>
